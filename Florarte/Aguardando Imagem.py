@@ -2,6 +2,9 @@ from PIL import Image
 import imagehash  
 import os
 
+
+# Código para localizar fotos em uma pasta e comparar Hashs
+
 def comparar_hashes(hash1, hash2):
     return str(hash1) == str(hash2)
 
