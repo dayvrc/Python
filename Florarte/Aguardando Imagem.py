@@ -33,7 +33,9 @@ def encontrar_imagem_igual(caminho_pasta, nomes_imagens, hash_exemplo):
 
     return imagens_localizadas, imagens_aguardando_imagem, imagens_nao_encontradas
 
-caminho_pasta = r'\\fas01wap\EntregaFA-DA\\'  # Caminho para a pasta das imagens
+# Caminho para a pasta das imagens
+
+caminho_pasta = r'\\fas01wap\EntregaFA-DA\\'  
 
 # Lista de códigos de imagens que você quer procurar
 
@@ -65,7 +67,9 @@ resultado += f'Quant. de Códigos Aguardando Imagem: {total_aguardando_imagem}\n
 print(resultado)
 
 # Abra um arquivo txt no modo de escrita ('w')
+
 with open(r'C:\Users\drdc\Downloads\codigos_aguardando_imagem.txt', 'w') as arquivo:
+    
     # Escreva o conteúdo da variável 'resultado' no arquivo
     arquivo.write(resultado)
 
