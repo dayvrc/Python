@@ -1130,6 +1130,7 @@ nomes_imagens = [
     '96030004',
     '96064001',
     '96065001',
+    '92091001',
    ]
 
 with Image.open(r'G:\Meu Drive\# DAYVSON COSTA\AREA DE TRABALHO - PC MARKETING\43878001.jpg') as imagem_exemplo:

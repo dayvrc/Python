@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carregar o arquivo Excel
-file_path = r'D:\Download\Estúdio_-_Solicitações-2025-02-20-07h-55m-44s.xlsx'
+file_path = r'D:\Download\Estúdio_-_Solicitações-2025-02-21-07h-51m-12s.xlsx'
 sheet1 = pd.read_excel(file_path, sheet_name='Sheet1')
 
 # Lista de códigos para pesquisar
@@ -1101,6 +1101,7 @@ search_codes = [
     '96030004',
     '96064001',
     '96065001',
+    '92091001',
 ]  # Adicione aqui os códigos que você deseja pesquisar
 search_column = 'Escreva abaixo os detalhes de sua solicitação:'  # Nome da coluna onde os valores serão pesquisados
 
