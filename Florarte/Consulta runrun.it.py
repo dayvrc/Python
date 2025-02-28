@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carregar o arquivo Excel
-file_path = r'D:\Download\Estúdio_-_Solicitações-2025-02-21-07h-51m-12s.xlsx'
+file_path = r'D:\Download\Estúdio_-_Solicitações-2025-02-24-08h-43m-02s.xlsx'
 sheet1 = pd.read_excel(file_path, sheet_name='Sheet1')
 
 # Lista de códigos para pesquisar
