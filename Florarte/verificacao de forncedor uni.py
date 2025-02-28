@@ -62,9 +62,9 @@ def processar_imagens(diretorio, cor_hex):
     })
 
     # Exportar para CSV
-    df.to_csv('resultado_imagens.csv', index=False)
-    print("Resultados exportados para 'resultado_imagens.csv'")
+    df.to_csv(r'C:\Users\drdc\Downloads\codigos_fornecedor_uni.txt', index=False)
+    print("Resultados exportados para 'codigos_fornecedor.txt'")
 
 # Exemplo de uso
-diretorio_fixo = "caminho/para/seu/diretorio"
-processar_imagens(diretorio_fixo, "#808080")  # Hexadecimal da cor cinza
+diretorio_fixo = r"D:\\"
+processar_imagens(diretorio_fixo, "#969696")  # Hexadecimal da cor cinza
