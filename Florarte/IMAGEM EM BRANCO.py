@@ -150,7 +150,7 @@ print(resultado)
 
 # --- Exportar resultados para arquivo de texto ---
 # Caminho para salvar o arquivo de resultados (adapte este caminho)
-caminho_arquivo_saida = r'C:\Users\drdc\Downloads\relatorio_imagens_em_branco_e_aguardando_imagem.txt'
+caminho_arquivo_saida = r'C:\Users\drdc\Downloads\relatorio_imagens_em_branco_e_aguardando_imagem2.txt'
 
 try:
     with open(caminho_arquivo_saida, 'w', encoding='utf-8') as arquivo:
