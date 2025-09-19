@@ -65,7 +65,7 @@ def categorizar_imagens_por_hash(caminho_pasta, hash_aguardando_imagem, hash_em_
         try:
             hash_atual = calcular_hash_imagem(caminho_arquivo)
             if hash_atual is None:
-                imagens_com_erro.append(f'{nome_imagem_sem_ext} (Hash inválido ou arquivo corrompido)')
+                imagens_com_erro.append(f'{nome_imagem_sem_ext} (Hash invalido ou arquivo corrompido)')
                 continue
 
             if comparar_hashes(hash_aguardando_imagem, hash_atual):
@@ -107,7 +107,7 @@ if hash_aguardando_imagem is None:
     exit() # Sai do script se o hash principal não puder ser calculado
 
 if hash_em_branco is None:
-    print(f"Não foi possível calcular o hash da imagem de exemplo 'em branco'. Verifique o caminho: {caminho_imagem_exemplo_em_branco}")
+    print(f"Não foi possivel calcular o hash da imagem de exemplo 'em branco'. Verifique o caminho: {caminho_imagem_exemplo_em_branco}")
     # Podemos continuar se a imagem em branco for opcional, ou sair como acima.
     # Por segurança, vou sair também se essa for crítica.
     exit()
@@ -133,17 +133,17 @@ resultado += f'Pasta Analisada: {caminho_pasta}\n'
 resultado += f'Total de Imagens JPG Processadas: {total_processadas}\n'
 resultado += f'-----------------------------------------\n\n'
 
-resultado += f'Códigos de Imagens LOCALIZADAS ({total_localizadas}):\n'
+resultado += f'Codigos de Imagens LOCALIZADAS ({total_localizadas}):'
 resultado += f'{", ".join(imagens_localizadas)}\n\n' # Use join para melhor visualização
 
-resultado += f'Códigos de Imagens AGUARDANDO IMAGEM ({total_aguardando_imagem}):\n'
+resultado += f'Codigos de Imagens AGUARDANDO IMAGEM ({total_aguardando_imagem}):'
 resultado += f'{", ".join(imagens_aguardando_imagem)}\n\n'
 
-resultado += f'Códigos de Imagens EM BRANCO ({total_em_branco}):\n'
+resultado += f'Codigos de Imagens EM BRANCO ({total_em_branco}):'
 resultado += f'{", ".join(imagens_em_branco)}\n\n'
 
 if imagens_com_erro:
-    resultado += f'Códigos de Imagens COM ERRO NO PROCESSAMENTO ({total_com_erro}):\n'
+    resultado += f'Codigos de Imagens COM ERRO NO PROCESSAMENTO ({total_com_erro}):'
     resultado += f'{", ".join(imagens_com_erro)}\n\n'
 
 print(resultado)
